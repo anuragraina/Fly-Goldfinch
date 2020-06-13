@@ -1,0 +1,12 @@
+.pick-currency {
+  display: flex;
+  margin: 10px;
+}
+
+.dropdown {
+  margin-left: 30px;
+}
+
+.dropdown-btn {
+  width: 212px;
+}
