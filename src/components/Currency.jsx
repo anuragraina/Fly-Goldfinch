@@ -16,7 +16,7 @@ import "../assets/styles/Currency.css";
 export default function Currency() {
   const { currency } = useContext(StoreContext);
 
-  const jsonData = [
+  const currencyList = [
     { currency: "XCD", name: "East Caribbean dollar", symbol: "$" },
     { currency: "EUR", name: "European euro", symbol: "€" },
     { currency: "GEL", name: "Georgian lari", symbol: "₾" },
@@ -28,8 +28,6 @@ export default function Currency() {
     { currency: "LSL", name: "Lesotho loti", symbol: "L" },
     { currency: "USD", name: "U.S. Dollar", symbol: "$" },
   ];
-  // eslint-disable-next-line
-  const currencyList = eval(jsonData);
 
   const handleClick = (pickedCurrency, type) => {
     if (type === "from") {

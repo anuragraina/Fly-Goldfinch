@@ -3,6 +3,7 @@ import { useLocalStore } from "mobx-react";
 
 export const StoreContext = React.createContext();
 
+//store for all the states managed in the application
 function StoreProvider({ children }) {
   const store = useLocalStore(() => ({
     counter: 0,
